@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Itim&family=Nerko+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@media screen and (max-width: 768px) {
+    .container h1{
+        letter-spacing: 0px;
+    }
+
+    .container .calculator {
+        height: auto;
+    }
+}
+body {
+    background: black;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 0px 0px 2rem 0px;
+    letter-spacing: 0.2rem;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.calculator {
+    box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 24px;
+    width: 300px;
+    height: 570px;
+    top: 20px;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    row-gap: 1rem;
+}
+
+.operator,
+.number {
+    width: 60px;
+    height: 60px;
+    border-radius: 30%;
+    border-width: 0px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background-color: #242424;
+    color: white;
+}
+.number:hover {
+    background-color: rgb(255, 255, 255, 0.3);
+}
+
+.operator {
+    color: #ed8114;
+}
+
+#prev {
+    text-align: right;
+    height: 20px;
+    margin: 0 20px;
+    padding-top: 20px;
+    font-size: 15px;
+    color: #ffffff;
+}
+
+#current {
+    text-align: right;
+    height: 45px;
+    margin: 10px 20px;
+    font-size: 30px;
+    color: white;
+}
